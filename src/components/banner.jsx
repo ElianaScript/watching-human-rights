@@ -5,7 +5,7 @@ export default function Banner() {
         <header className="banner">
             <nav className="banner-nav">
                 <a href="/">Home</a>
-                <a href="/">Interviews</a>
+                <a href="/interviews">Interviews</a>
             </nav>
         </header>
     )

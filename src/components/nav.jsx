@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const nav = () => (
   <nav>
     <NavLink to="/home">Home</NavLink> |{' '}
-    <NavLink to="/home">Interviews</NavLink> |{' '}
+    <NavLink to="/interviews">Interviews</NavLink> |{' '}
 
   </nav>
 );
