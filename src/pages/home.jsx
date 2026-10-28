@@ -79,7 +79,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* About the Author */}
+
             <section className="home-author">
                 <div className="home-author-inner">
 
@@ -97,14 +97,14 @@ function Home() {
                         <h2>Dr. Mark Gibney</h2>
 
                         <p>
-                           Brief biography. 
+                            Brief biography.
                         </p>
                     </div>
 
                 </div>
             </section>
 
-            {/* Other Publications */}
+
             <section className="home-publications">
                 <div className="home-section-inner">
 
