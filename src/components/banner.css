@@ -1,0 +1,114 @@
+.banner {
+    background: #253b4a;
+    color: #f4f1e9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1.25rem 4rem;
+    border-bottom: 3px solid #66858a;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 4px 16px rgba(37, 59, 74, 0.12);
+}
+
+.banner h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+
+    color: #f4f1e9;
+}
+
+.banner-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-nav a {
+    position: relative;
+
+    color: #e0e8e7;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    padding: 0.5rem 0;
+    transition: color 0.25s ease;
+}
+
+.banner-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+    background: #9bb9b5;
+
+    transition: width 0.25s ease;
+}
+
+.banner-nav a:hover,
+.banner-nav a:focus-visible {
+    color: #ffffff;
+}
+
+.banner-nav a:hover::after,
+.banner-nav a:focus-visible::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 6rem 10%;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-nav {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+    }
+
+    .banner-nav a {
+        font-size: 0.72rem;
+    }
+}
