@@ -2,7 +2,6 @@
 import React from "react";
 import "../index.css";
 
-// Replace these sample entries with real interviews.
 const interviewsData = [
   {
     id: 1,
