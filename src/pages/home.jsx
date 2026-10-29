@@ -43,10 +43,6 @@ function Home() {
                             international law, and the questions that shape
                             our understanding of justice.
                         </p>
-
-                        <a href="#featured-book" className="home-button">
-                            Explore the Book
-                        </a>
                     </div>
 
                 </div>
@@ -73,7 +69,7 @@ function Home() {
                             <span className="home-quote-mark"> " </span>
                         </p>
 
-                        <cite>— Dr. Mark Gibney</cite>
+                        <cite>— quote from <em>Watching Human Rights</em></cite>
                     </blockquote>
 
                 </div>
@@ -84,17 +80,15 @@ function Home() {
                 <div className="home-author-inner">
 
                     <img
-                        src="/professor.jpg"
+                        src="/Mark-Gibney-Headshot.jpg"
                         alt="Dr. Mark Gibney"
                         className="home-author-image"
                     />
 
                     <div className="home-author-content">
-                        <p className="home-eyebrow">
+                        <h3 className="home-eyebrow">
                             ABOUT THE AUTHOR
-                        </p>
-
-                        <h2>Dr. Mark Gibney</h2>
+                        </h3>
 
                         <p>
                             Brief biography.
@@ -108,11 +102,8 @@ function Home() {
             <section className="home-publications">
                 <div className="home-section-inner">
 
-                    <p className="home-eyebrow">
-                        EXPLORE HIS WORK
-                    </p>
 
-                    <h2>Other Books & Publications</h2>
+                    <h2>Other Books & Publications From the Author</h2>
 
                     <div className="home-books-grid">
                         {otherBooks.map((book, index) => (
