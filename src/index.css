@@ -193,6 +193,63 @@ blockquote {
   max-width: 100%;
 }
 
+.home-book-card {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 190px;
+  padding: 1.25rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px var(--shadow);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px var(--shadow-hover);
+}
+
+.home-books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.home-publications {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.home-book-card img {
+  width: 125px;
+  height: 185px;
+
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.home-book-card h3 {
+  margin: 0;
+  color: var(--primary);
+
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
 /* =========================================
    FOOTER
 ========================================= */

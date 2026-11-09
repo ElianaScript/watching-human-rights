@@ -4,19 +4,19 @@ import "../index.css";
 
 const otherBooks = [
     {
-        title: "Book Title",
-        image: "/book-two.jpg",
-        link: "#",
+        title: "The Politics of Human Rights: The Quest for Dignity",
+        image: "/politics-of-human-rights.jpg",
+        link: "https://www.goodreads.com/book/show/5248103-the-politics-of-human-rights",
     },
     {
-        title: "Book Title",
-        image: "/book-three.jpg",
-        link: "#",
+        title: "The Role of Networks in Advancing Human Rights: Making Human Connections",
+        image: "/role-of-networks.png",
+        link: "https://books.google.com/books/about/The_Role_of_Networks_in_Advancing_Human.html?id=F7yREQAAQBAJ&source=kp_book_description",
     },
     {
-        title: "Book Title",
-        image: "/book-four.jpg",
-        link: "#",
+        title: "Watching Human Rights: The 101 Best Films",
+        image: "/watching-human-rights.jpg",
+        link: "https://www.goodreads.com/book/show/16694104-watching-human-rights",
     },
 ];
 
@@ -30,7 +30,7 @@ function Home() {
 
                     <div className="home-hero-cover">
                         <img
-                            src="/book-cover.jpg"
+                            src="/new-book-cover.jpg"
                             alt="Cover of the new book"
                             className="home-book-cover"
                         />
@@ -100,7 +100,7 @@ function Home() {
 
 
             <section className="home-publications">
-                <div className="home-section-inner">
+                <div className="home-books-grid">
 
 
                     <h2>Other Books & Publications From the Author</h2>
@@ -118,8 +118,6 @@ function Home() {
                                 />
 
                                 <h3>{book.title}</h3>
-
-                                <span>Learn More →</span>
                             </a>
                         ))}
                     </div>
@@ -132,3 +130,4 @@ function Home() {
 }
 
 export default Home;
+
